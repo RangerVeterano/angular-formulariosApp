@@ -15,6 +15,7 @@ interface MenuItem {
 })
 export class SidemenuComponent {
 
+  //Rutas para el mentu de los formularios por medio de template
   templateMenu: MenuItem[] = [
     {
       text: 'Básicos',
@@ -30,6 +31,7 @@ export class SidemenuComponent {
     }
   ];
 
+  //Rutas para el formulario por medio del reactive
   reactiveMenu: MenuItem[] = [
     {
       text: 'Básicos',
@@ -43,6 +45,19 @@ export class SidemenuComponent {
       text: 'Switches',
       ruta: './reactive/switches'
     }
+  ];
+
+  //Rutas para las validaciones
+  validacionesMenu: MenuItem[] = [
+    {
+      text: 'login',
+      ruta: './validaciones/login'
+    },
+    {
+      text: 'registro',
+      ruta: './validaciones/registro'
+    }
+
   ];
 
 }
